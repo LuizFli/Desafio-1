@@ -96,9 +96,9 @@ app.get('/api/products', async (req, res) => {
 
 app.post('/api/products', async (req, res) => {
   try {
-    const { name, description, price, quantity } = req.body;
+    const { name, price, quantity } = req.body;
     if (!name) return res.status(400).json({ message: 'name is required' });
-    const prod = await prisma.product.create({ data: { name, description, price: Number(price) || 0, quantity: Number(quantity) || 0 } });
+    const prod = await prisma.product.create({ data: { name, price: Number(price) || 0, quantity: Number(quantity) || 0 } });
     res.status(201).json(prod);
   } catch (err) {
     console.error(err);

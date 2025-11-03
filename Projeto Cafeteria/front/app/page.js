@@ -21,6 +21,7 @@ export default function Login() {
       });
 
       console.log("✅ Login bem-sucedido:", res.data);
+      localStorage.setItem("nome", res.data.name);
       return true;
     } catch (erro) {
       console.error("❌ Erro:", erro);

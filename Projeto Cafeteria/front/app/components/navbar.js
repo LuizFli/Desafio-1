@@ -1,6 +1,9 @@
 import Link from "next/link";
 
 const Navbar = () => {
+  const sair = () => {
+    localStorage.removeItem("nome");
+  }
   return (
     <nav aria-label="Main navigation">
       <ul className="space-y-1">
@@ -16,7 +19,7 @@ const Navbar = () => {
         
         <li>
           <Link
-            href="/home/cadProdutos"
+            href="/home/estoque"
             className="block rounded-md px-3 py-2 text-sm hover:bg-zinc-100 dark:hover:bg-zinc-800"
           >
             Estoque
@@ -24,7 +27,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            href="/home/estoque"
+            href="/home/cadProdutos"
             className="block rounded-md px-3 py-2 text-sm hover:bg-zinc-100 dark:hover:bg-zinc-800"
           >
             Cadastrar Produtos
@@ -32,10 +35,11 @@ const Navbar = () => {
         </li>
         <li>
           <Link
+            onClick={sair}
             href="/"
             className="block rounded-md px-3 py-2 text-sm hover:bg-zinc-100 dark:hover:bg-zinc-800"
           >
-            exit
+            Sair
           </Link>
         </li>
       </ul>

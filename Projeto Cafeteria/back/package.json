@@ -5,13 +5,14 @@
   "scripts": {
     "dev": "node server.js",
     "start": "node server.js",
-    "seed": "node seed-user.js"
+    "seed": "node seed-user.js",
+    "back": "npm install && npm install node && npx prisma generate && npx prisma migrate dev && npm run seed && npm run dev"
   },
   "dependencies": {
     "@prisma/client": "^6.18.0",
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "node": "^22.21.0"
+    "node": "^22.21.1"
   },
   "devDependencies": {
     "prisma": "^6.18.0"

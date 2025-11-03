@@ -1,1 +1,8 @@
-a navbar esta navegando para as pages erradas
+Descrição de como repoduzir o bug!
+
+Na pagina de cadastro de produtos
+inserindo Nome, Descrição, Preço e quantidade
+cliquando no botão Salvar.
+
+resultado esperado e salvar todos os dados no banco e redirecionar para a pagina estoque.
+porem na pagina estoque nao aparece a Descrição do produto.
