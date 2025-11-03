@@ -1,7 +1,7 @@
 ## Instuçôes
 
 Crie um arquivo .env na pasta back para colocar a url do seu banco, o banco esta rodando em Mysql
-## Exempo - .env {
+## Exemplo - .env {
    DATABASE_URL="mysql://root:senai@localhost:3306/cafeteria_dev"
 }
 Rode os Comandos nos Seguintes Diretorios.
