@@ -1,9 +1,10 @@
 ## Instuçôes
 
-Estando na maquina do senai nao ha nessecidade, mas caso esteja em outra maquina sera necessario arrumar a url do banco, ONDE FAZER ISSO: Arquivo .ENV na pasta back do projeto
-
-
-Abra 2 terminais 1 no diretorio back e outro no front, nos diretorios corretos rode o comando
+Crie um arquivo .env na pasta back para colocar a url do seu banco, o banco esta rodando em Mysql
+## Exempo - .env {
+   DATABASE_URL="mysql://root:senai@localhost:3306/cafeteria_dev"
+}
+Rode os Comandos nos Seguintes Diretorios.
 
 ## Diretorio Back 
 npm run back
