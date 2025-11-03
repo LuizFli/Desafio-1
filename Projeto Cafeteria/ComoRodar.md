@@ -11,3 +11,9 @@ npm run back
 
 ## Diretorio Front
 npm run front
+
+
+## Acesso Login
+
+Username:  admin
+Password:  admin
