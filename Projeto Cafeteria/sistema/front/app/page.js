@@ -51,7 +51,7 @@ export default function Login() {
         <div className="mb-8 flex w-full flex-col items-center sm:items-center">
           <label className="mb-4 w-full max-w-sm">
             <span className="block mb-2 text-sm font-medium text-zinc-700 dark:text-zinc-300">
-              Username
+              Email
             </span>
             <input
               value={email}
@@ -59,7 +59,7 @@ export default function Login() {
               onChange={(e) => setEmail(e.target.value)}
               type="text"
               className="block w-full rounded-md border-0 bg-zinc-100 px-3 py-2 text-sm text-zinc-900 shadow-sm ring-1 ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-purple-500 dark:bg-zinc-800 dark:text-zinc-100 dark:ring-zinc-600 dark:placeholder:text-zinc-500"
-              placeholder="Enter your username"
+              placeholder="Enter your Email"
             />
           </label>
           <label className="mb-6 w-full max-w-sm">
@@ -71,7 +71,7 @@ export default function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="block w-full rounded-md border-0 bg-zinc-100 px-3 py-2 text-sm text-zinc-900 shadow-sm ring-1 ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-purple-500 dark:bg-zinc-800 dark:text-zinc-100 dark:ring-zinc-600 dark:placeholder:text-zinc-500"
-              placeholder="Enter your password"
+              placeholder="Enter your Password"
             />
           </label>
           <button onClick={handleClick} className="w-full max-w-sm rounded-md bg-purple-600 px-4 py-2 text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-black">

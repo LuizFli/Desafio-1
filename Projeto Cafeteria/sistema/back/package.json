@@ -6,7 +6,7 @@
     "dev": "node server.js",
     "start": "node server.js",
     "seed": "node seed-user.js",
-    "back": "npm install && npm install node && npm install prisma --save-dev && npx prisma generate && npx prisma migrate dev && npm run seed && npm run dev"
+    "back": "npm install && npm install node && npm install prisma --save-dev && npx prisma generate && npx prisma migrate reset --force && npx prisma migrate dev && npm run seed && npm run dev"
   },
   "dependencies": {
     "@prisma/client": "^6.18.0",

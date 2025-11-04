@@ -15,5 +15,6 @@ npm run front
 
 ## Acesso Login
 
-Username:  admin
-Password:  admin
+{ email: 'admin', password: 'admin', name: 'Administrador' },
+{ email: 'barista', password: '123456', name: 'Barista' },
+{ email: 'caixa', password: '123456', name: 'Caixa' },
